@@ -58,7 +58,7 @@ resource "aws_instance" "ec2_jenkins" {
 package_update: true
 package_upgrade: true
 packages:
-  - java-17-amazon-corretto
+  - java-21-amazon-corretto
   - docker
 runcmd:
   - systemctl enable docker
